@@ -8,9 +8,10 @@
 #define bluepin 6
 #define stepperOut 8 // creating an output for 12v relay on pin 2
 #define kill 7 // kill process button
-int analogPin = A3;
-int a3val = 0;
-int a3inival = 0;
+int analogPin = A3; // Setting wiper pin for 100kohm pot
+int a3val = 0; // used value for step timing
+int a3inival = 0; // initial value pulled from A3
+// next 4 int values for creating total steps counter
 int counter = 0;
 int currentState = 0;
 int previousState = 0;
